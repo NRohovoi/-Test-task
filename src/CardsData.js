@@ -20,7 +20,7 @@ const DataCard = [
   {
     id: '3',
     avatar:
-      'https://shapka-youtube.ru/wp-content/uploads/2021/02/prikolnaya-avatarka-dlya-patsanov.jpg',
+      'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5gd1_8yXRj7BZ_4DZzsjIxE0wawwRgNuUEg&usqp=CAU',
     tweets: 'tweets',
     countTweets: 29,
     followers: 'followers',

@@ -8,7 +8,6 @@ import {
   ProfileCard,
   AvatarWrapper,
   Avatar,
-  CentralLine,
   BoxInfo,
   BoxTweet,
   CounTweet,
@@ -19,8 +18,6 @@ import {
   Button,
   NextButton,
 } from './CardListItem.styled';
-
-import Ellipse from '../../images/Ellipse.png';
 
 export default function CardListItem({ data }) {
   const { followings, handleFollowings } = useContext(Context);
@@ -36,10 +33,8 @@ export default function CardListItem({ data }) {
     <ListItem>
       <ProfileCard>
         <Logo />
-        <CentralLine />
         <AvatarWrapper>
-          <img src={Ellipse} alt="frame of avatar" />
-          <Avatar src={avatar} alt={avatar} />
+          <Avatar src={avatar} alt={avatar} width="67px" />
         </AvatarWrapper>
         <BoxInfo>
           <BoxTweet>

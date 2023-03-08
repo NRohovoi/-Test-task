@@ -40,17 +40,58 @@ export const ProfileCard = styled.div`
 export const AvatarWrapper = styled.div`
   position: absolute;
   top: 40%;
-  left: 40%;
+  left: 39%;
   width: 80px;
   height: 80px;
+  border-radius: ${p => p.theme.radii.img};
+  background: #ebd8ff;
+  box-shadow: 0px 4.39163px 4.39163px rgba(0, 0, 0, 0.06),
+    inset 0px -2.19582px 4.39163px #ae7be3,
+    inset 0px 4.39163px 3.29372px #fbf8ff;
+  &::before {
+    content: '';
+    position: absolute;
+    top: 37px;
+    left: -123px;
+    width: 123px;
+    height: 8px;
+
+    background: #ebd8ff;
+    box-shadow: 0px 3.43693px 3.43693px rgba(0, 0, 0, 0.06),
+      inset 0px -1.71846px 3.43693px #ae7be3,
+      inset 0px 3.43693px 2.5777px #fbf8ff;
+
+    @media screen and (min-width: 768px) {
+      left: -149px;
+      width: 149px;
+    }
+  }
+  &::after {
+    content: '';
+    position: absolute;
+    top: 37px;
+    left: 79px;
+    width: 116px;
+    height: 8px;
+
+    background: #ebd8ff;
+    box-shadow: 0px 3.43693px 3.43693px rgba(0, 0, 0, 0.06),
+      inset 0px -1.71846px 3.43693px #ae7be3,
+      inset 0px 3.43693px 2.5777px #fbf8ff;
+
+    @media screen and (min-width: 768px) {
+      left: 80px;
+      width: 149px;
+    }
+  }
 `;
 
 export const Avatar = styled.img`
   position: absolute;
-  top: 7px;
-  left: 11px;
-  width: 58px;
-  height: 58px;
+  top: 6px;
+  left: 7px;
+  width: 67px;
+  height: 67px;
 
   border-radius: ${p => p.theme.radii.img};
 `;
